@@ -9,3 +9,13 @@ contactes.forEach(nom => {
     lista.appendCHiled(li);
 });
 document.body.appendChild(llista);
+
+document.querySelector("form").addEventListerner("submit","e"=>{
+    e.preventDefault();
+    const input = document.querySelector("#nom");
+    if(input.value.trim()===""){
+        alert("EL camp no pot estar buit");
+        return;
+    }
+    // Logica per afegit el contacte...
+});
